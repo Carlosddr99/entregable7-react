@@ -5,7 +5,7 @@ const LanguageContext = createContext();
 
 export const useLanguageContext = () => useContext(LanguageContext);
 
-export function Header({children}){
+export function LanguageProvider({children}){
     const [language, setLanguage] = useState('es');
 
     const toggleLanguage = () =>{
